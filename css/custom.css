@@ -1,0 +1,616 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background-color: #3576A7;
+	min-height: 140px;
+	color: white;
+}
+
+.header-heading img {
+	margin-top: 15px;
+	height: 80px;
+}
+
+.header-widget-area {
+	margin-top: 29px;
+	width: auto;
+	float: right;
+}
+
+.header-widget {
+	float: left;
+	display: inline-block;
+}
+
+.header-widget a {
+	color: #FFF;
+}
+
+.header-widget a:hover .header-widget-text, .header-widget a:hover .header-widget-icon {
+	opacity: 0.80;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+.header-widget:first-child {
+	margin-right: 30px;
+}
+
+.header-widget:last-child {
+	margin-left: 30px;
+}
+
+.header-widget-icon {
+	float: left;
+	margin-top: 7px;
+	margin-right: 10px;
+}
+
+.header-widget-text {
+	float: left;
+}
+
+.header-widget-title {
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 4px;
+} 
+
+.header-widget-subtitle {
+	font-size: 0.9em;
+	font-weight: normal;
+} 
+
+.navbar {
+    margin-bottom: 0;
+    position: absolute;
+    top: 115px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #fff;
+    border: #fff;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.navbar .container {
+	width: 100%;
+}
+
+.navbar .navbar-nav {
+	display: inline-block;
+  	float: none;
+  	vertical-align: top;
+}
+
+.navbar .navbar-nav li a {
+	color: #3576A7;
+	transition: all 0.2s ease;
+}
+
+.navbar .navbar-nav li a:hover {
+	color: #fff;
+	background-color: #3576A7;
+}
+
+.navbar .navbar-collapse {
+  	text-align: center;
+}
+
+.jumbotron {
+	margin-top: 0px;
+	padding-top: 105px;
+	background: #4EC9DF url("../images/background/background_10.jpg") no-repeat;
+	background-position: left center;
+	color: #fff;
+	height: 400px;
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:0.85; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:0.85; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:0.85; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fade-in.four {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.jumbotron .container {
+	position: absolute;
+	left: 7%;
+	padding: 30px;
+	background-color: #ffffff;
+	opacity: 0.85;
+    filter: alpha(opacity=85); /* For IE8 and earlier */
+    width: 50%;
+    border-radius: 20px;
+}
+
+.jumbotron .container h1 {
+	font-size: 2em;
+	color: #3576a7;
+}
+
+.jumbotron .container p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	color: #3576a7;
+	font-weight: 400;
+	line-height: 1.7em;
+}
+
+
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+#myCarousel {
+	margin-bottom: 30px;
+}
+
+.carousel-caption {
+	position: relative;
+	left: 7%;
+	top: 90px;
+	width: 50%;
+	padding: 30px;
+	background-color: #ffffff;
+	opacity: 0.85;
+    filter: alpha(opacity=85); /* For IE8 and earlier */
+    border-radius: 20px;
+    text-align: left;
+    text-shadow: none;
+}
+
+.carousel-caption h4 {
+	font-size: 2em;
+	color: #3576a7;
+}
+
+.carousel-caption p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	color: #3576a7;
+	font-weight: 400;
+	line-height: 1.7em;
+}
+
+.carousel-caption-old p {
+	font-size: 24px;
+}
+
+.carousel-caption-old h4 {
+	font-size: 32px;
+}
+
+#myCarousel .item {
+	height: 400px;
+}
+
+#slide1 {
+	background: url('../images/background/background_10.jpg') left center no-repeat;
+}
+
+#slide2 {
+	background: url('../images/background/background_12.jpg') left center no-repeat;
+}
+
+#slide3 {
+	background: url('../images/background/background_13.jpg') left center no-repeat;
+}
+
+.carousel-control {
+	width: 100px;
+}
+
+ol.carousel-indicators li {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	border: none;
+	background-color: white;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+ol.carousel-indicators li.active {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	border: none;
+	background-color: #3576A7;
+	margin-bottom: 1px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+
+
+
+.breadcrumb-fluid {
+	margin-bottom: 40px;
+	background: #4EC9DF url("../images/breadcrumb_background.png") repeat-x;
+	background-position: left bottom;
+}
+
+.breadcrumb {
+	margin: 26px 0px 0px 0px;
+	background-color: transparent;
+	color: #FFF;
+	border-radius: 0px;
+}
+
+.breadcrumb > li + li:before {
+    color: #FFF;
+}
+
+.breadcrumb li.active {
+	color: #FFF;
+}
+
+.breadcrumb li a {
+	color: #FFF;
+}
+
+ol.breadcrumb {
+	padding-left: 0px;
+}
+
+.breadcrumb-fluid h1 {
+	color: #FFF;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+
+.main-body h2 {
+	font-size: 2.2em;
+	color: #3576A7;
+}
+
+.main-body p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	line-height: 2.1em;
+}
+
+.accommodation-listing h2 {
+	font-weight: normal;
+	font-size: 1.7em;
+	color: #3576A7;
+}
+
+.accommodation-listing p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.main-body a.btn, .accommodation-listing a.btn {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #3576A7;
+	border: 0px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	transition: all 0.2s ease;
+}
+
+.main-body a.btn:hover, .accommodation-listing a.btn:hover {
+	background-color: #4EC9DF;
+}
+
+.main-body a.btn i.fa, .accommodation-listing a.btn i.fa {
+	margin-left: 7px;
+}
+
+.main-body .img-rounded, .accommodation-listing .img-rounded {
+	border-radius: 10px;
+}
+
+.nav-tabs {
+	margin-bottom: 20px;
+}
+
+.accommodation-listing a img:hover {
+	opacity: 0.75;
+    filter: alpha(opacity=75); /* For IE8 and earlier */
+}
+
+table {
+	font-family: 'Open Sans', sans-serif;
+}
+
+table caption {
+	font-size: 1.5em;
+}
+
+.table-striped th {
+	width: 30%;
+}
+
+.borderless tbody tr td, .borderless tbody tr th, .borderless thead tr th {
+    border: none;
+}
+
+.table-striped>tbody>tr:nth-child(odd) {
+    background-color:#daf5fa;
+}
+
+.gallery {
+	float: left;
+	width: 165px;
+	margin: 7px;
+}
+
+.calendar {
+	width: 100%;
+	height: 500px;
+}
+
+.footer {
+	margin-top: 40px;
+	padding-top: 20px;
+	padding-bottom: 12px;
+	background-color: #4EC9DF;
+    color: #FFF;
+}
+
+.footer a {
+	color: #fff;
+}
+
+
+
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.jumbotron .container, .carousel-caption {
+   		width: 60%;
+	}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.header-widget-area {
+		margin-top: 31px;
+	}
+
+	.header-widget:first-child {
+		margin-right: 15px;
+	}
+
+	.header-widget:last-child {
+		margin-left: 15px;
+	}
+
+	.header-widget-icon i {
+		font-size: 2.4em;
+		margin-top: 3px;
+		margin-right: 0px;
+	}
+
+	.header-widget-title {
+		font-size: 0.9em;
+		margin-bottom: 3px;
+	} 
+
+	.header-widget-subtitle {
+		font-size: 0.8em;
+	}
+
+	.header-heading img {
+		height: 70px;
+		margin-top: 20px;
+	}
+
+	.jumbotron .container, .carousel-caption {
+   		width: 70%;
+	}
+
+	.carousel-control {
+		width: 70px;
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+	header {
+		min-height: 200px;
+	}
+
+	.header-heading {
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.header-widget-area {
+		float: none;
+		text-align: center;
+	}
+
+	.header-widget {
+		float: none;
+		text-align: left;
+	}
+
+	.header-widget:first-child {
+		margin-right: 20px;
+	}
+
+	.header-widget:last-child {
+		margin-left: 20px;
+	}
+
+	.header-widget-icon i {
+		font-size: 2.2em;
+		margin-top: 5px;
+		margin-right: 1px;
+	}
+
+	.header-widget-title {
+		font-size: 0.9em;
+		margin-bottom: 3px;
+	} 
+
+	.header-widget-subtitle {
+		font-size: 0.7em;
+	}
+
+	.navbar {
+		top: 175px;
+	}
+
+	.jumbotron {
+		padding-top: 70px;
+	}
+
+	#myCarousel .item {
+		height: 440px;
+	}
+
+	.carousel-control {
+		width: 50px;
+	}
+
+	.jumbotron .container, .carousel-caption {
+   		width: 86%;
+	}
+
+	.hide-on-mobile {
+		display: none;
+	}
+
+	.footer p.text-right {
+		text-align: left;
+	}
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+	header {
+		min-height: 280px;
+	}
+
+	.header-heading img {
+		height: 65px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.header-widget-area {
+		margin: auto;
+		padding: 0;
+		float: none;
+		width: 170px;
+	}
+
+	.header-widget {
+		float: left;
+		display: block;
+		clear: both;
+		width: auto;
+	}
+
+	.header-widget-icon i {
+		font-size: 2em;
+		margin-top: 5px;
+		margin-right: 1px;
+	}
+
+	.header-widget-title {
+		font-size: 1em;
+		margin-bottom: 3px;
+	} 
+
+	.header-widget-subtitle {
+		font-size: 0.9em;
+	}
+
+	.header-widget:first-child {
+		margin-right: 0;
+	}
+
+	.header-widget:last-child {
+		margin-left: 0;
+	}
+
+	.navbar {
+		top: 255px;
+	}
+
+	.jumbotron {
+		padding-top: 70px;
+		height: 525px;
+	}
+
+	#myCarousel .item {
+		height: 525px;
+	}
+
+	.carousel-control {
+		display: none;
+	}
+
+	.breadcrumb-fluid h1 {
+		font-size: 2.2em;
+	}
+
+	.hide-on-mobile {
+		display: none;
+	}
+
+	.footer p.text-right {
+		text-align: left;
+	}
+}

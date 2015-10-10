@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jokikumpu Farm Tourism - Reservation</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../fonts/font-awesome-4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+    <link href="../../css/custom.css" rel="stylesheet">
+    <link href="../../css/datepicker.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="header-heading col-xs-12 col-sm-2 col-md-4">
+            <a href="../"><img src="../../images/logo_en.png"></a>
+          </div>
+          <div class="header-widget-area col-xs-12 col-sm-10 col-md-8">
+             <div class="header-widget">
+              <a href="../contact/">
+                  <div class="header-widget-icon">
+                    <i class="fa fa-phone fa-3x"></i>
+                  </div>
+                  <div class="header-widget-text">
+                    <h4 class="header-widget-title">+358 50 5270 219</h4>
+                    <span class="header-widget-subtitle">info@jokikumpu.com</span>
+                  </div>
+                </a>
+              </div>
+              <div class="header-widget">
+                <a href="../contact/">
+                  <div class="header-widget-icon">
+                   <i class="fa fa-home fa-3x"></i>
+                  </div>
+                  <div class="header-widget-text">
+                    <h4 class="header-widget-title">Saarisentie 75 A</h4>
+                    <span class="header-widget-subtitle">73320 Nilsiä, Finland</span>
+                  </div>
+                </a>
+              </div>
+              <div class="header-widget">
+                <a href="../../fi/">
+                  <div class="header-widget-icon">
+                    <i class="fa fa-globe fa-3x"></i>
+                  </div>
+                  <div class="header-widget-text">
+                    <h4 class="header-widget-title">Suomeksi</h4>
+                    <span class="header-widget-subtitle">Vaihda kieli</span>
+                  </div>
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../">Home</a>
+            </li>
+            <li>
+              <a href="../accommodation/">Accommodation</a>
+            </li>
+            <li>
+              <a href="../activities/">Activities</a>
+            </li>
+            <li>
+              <a href="../photos/">Photos</a>
+            </li>
+            <li>
+              <a href="#">Reservation</a>
+            </li>
+            <li>
+              <a href="../contact/">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   <div class="breadcrumb-fluid">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="../">Home</a></li>
+        <li class="active">Reservation</li>
+      </ol>
+      <h1>Reservation</h1>
+    </div>
+    </div>
+
+      <div class="container">
+        <div class="row">
+        <div class="reservation col-xs-12 col-sm-5 col-md-5 col-lg-5">
+          <h2>How can I make a reservation?</h2>
+            <ul class="fa-ul">
+              <li><i class="fa-li fa fa-2x fa-calendar"></i>Please check the availability of your chosen accommodation by looking at the calendar which you can find under the accommodation details.</li>
+              <li><i class="fa-li fa fa-2x fa-check-square-o"></i>Fill in the enclosed reservation form with your contact details and information regarding your stay. If you have any additional requirements, please include a message.</li>
+              <li><i class="fa-li fa fa-2x fa-reply"></i>We will process your request and send you a confirmation and payment instructions by email. If your chosen accommodation is not available, we will suggest alternative options.</li>
+              <li><i class="fa-li fa fa-2x fa-credit-card"></i>Please pay your reservation via bank transfer within one week of receiving the invoice. Unfortunately we don't accept credit/debit card payments.</li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <form class="form-horizontal" action="/palautelomake" method="post">
+          <fieldset>
+            <legend><i class="fa fa-phone fa-1x"></i> Contact details</legend>
+            <input type="hidden" name="recipient" value="matajuut@gmail.com" />
+            <input type="hidden" name="redirect" value="http://www.jokikumpu.com/en/reservation/confirmation/" />
+            <input type="hidden" name="require" value="name" />
+            <input type="hidden" name="viestimuoto" value="Kysely Jokikummun kotisivuilta" />
+            <input type="hidden" name="kieli" value="englanti" />
+            <div class="form-group">
+              <label for="name" class="col-sm-3 control-label">Name</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="name" placeholder="Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="col-sm-3 control-label">Email</label>
+              <div class="col-sm-9">
+                <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="col-sm-3 control-label">Telephone</label>
+              <div class="col-sm-9">
+                <input type="tel" class="form-control" id="telephone" placeholder="Telephone">
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><i class="fa fa-info-circle fa-1x"></i> Reservation details</legend>
+            <div class="form-group">
+              <label for="accommodation" class="col-sm-4 col-md-3 control-label">Accommodation</label>
+              <div class="col-sm-6 col-md-5 col-lg-4">
+                <select class="form-control" id="accommodation">
+                  <option>Ruiskaunokki</option>
+                  <option>Leppäkerttu</option>
+                  <option>Leppäpirkko</option>
+                  <option>Justiinan tupa</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="arrival" class="col-sm-4 col-md-3 control-label">Arrival</label>
+              <div class="col-sm-5 col-md-4 col-lg-3">
+                <input type="text" class="form-control datepicker" id="arrival" placeholder="Choose date" data-date-weekStart="1" data-date-format="dd-mm-yyyy">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="departure" class="col-sm-4 col-md-3 control-label">Departure</label>
+              <div class="col-sm-5 col-md-4 col-lg-3">
+                <input type="text" class="form-control datepicker" id="departure" placeholder="Choose date" data-date-weekStart="1" data-date-format="dd-mm-yyyy">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="adults" class="col-sm-4 col-md-3 control-label">Adults</label>
+              <div class="col-sm-4 col-md-3 col-lg-2">
+                <select class="form-control" id="adults">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="children" class="col-sm-4 col-md-3 control-label">Children</label>
+              <div class="col-sm-4 col-md-3 col-lg-2">
+                <select class="form-control" id="children">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="pets" class="col-sm-4 col-md-3 control-label">Pets</label>
+              <div class="col-sm-4 col-md-3 col-lg-2">
+                <select class="form-control" id="pets">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><i class="fa fa-commenting fa-1x"></i> Additional details</legend>
+            <div class="form-group">
+              <label for="message" class="col-sm-3 control-label">Message</label>
+              <div class="col-sm-9">
+                <textarea class="form-control" rows="5" id="message" placeholder="Please write any additional comments here"></textarea>
+             </div>
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-primary">Send <i class="fa fa-chevron-circle-right fa-lg"></i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      </div>
+      </div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <p>Design: <a href="mailto:matti.t.juutinen@gmail.com">Matti Juutinen</a><p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <p class="text-right">&copy; Jokikumpu Farm Tourism</p>
+      </div>
+  </div>
+  </div>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+      var nowTemp = new Date();
+      var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+       
+      var checkin = $('#arrival').datepicker({
+        onRender: function(date) {
+          return date.valueOf() < now.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+        if (ev.date.valueOf() > checkout.date.valueOf()) {
+          var newDate = new Date(ev.date)
+          newDate.setDate(newDate.getDate() + 1);
+          checkout.setValue(newDate);
+        }
+        checkin.hide();
+        $('#departure')[0].focus();
+      }).data('datepicker');
+      var checkout = $('#departure').datepicker({
+        onRender: function(date) {
+          return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+        checkout.hide();
+      }).data('datepicker');
+    </script>
+  </body>
+</html>

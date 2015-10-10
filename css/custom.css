@@ -95,6 +95,10 @@ header {
 	background-color: #3576A7;
 }
 
+.navbar .navbar-nav li.active a {
+
+}
+
 .navbar .navbar-collapse {
   	text-align: center;
 }
@@ -371,7 +375,7 @@ table caption {
 }
 
 .table-striped>tbody>tr:nth-child(odd) {
-    background-color:#daf5fa;
+    background-color: #daf5fa;
 }
 
 .gallery {
@@ -384,6 +388,71 @@ table caption {
 	width: 100%;
 	height: 500px;
 }
+
+
+
+
+/* --------------------------------------
+   Reservation Form
+   -------------------------------------- */
+
+.reservation {
+	background-color: #3576A7;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	border-radius: 20px;
+	padding: 0px 20px 10px 20px;
+}
+
+.reservation h2 {
+	font-size: 2em;
+	padding-bottom: 20px;
+}
+
+.reservation ul {
+	padding-left: 20px;
+}
+
+.reservation ul li {
+	padding-bottom: 25px;
+}
+
+.form-horizontal {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.form-horizontal fieldset {
+	margin-bottom: 20px;
+}
+
+.form-horizontal legend {
+	color: #3576A7;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.form-horizontal legend i.fa {
+	font-size: 1.5em;
+	padding-right: 10px;
+}
+
+.form-horizontal button i {
+	margin-left: 5px;
+}
+
+input.datepicker::-webkit-input-placeholder {
+	padding-left: 8px;
+}
+
+
+
+
+
+
+/* --------------------------------------
+   Footer
+   -------------------------------------- */
 
 .footer {
 	margin-top: 40px;
@@ -400,7 +469,9 @@ table caption {
 
 
 
-
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
@@ -531,6 +602,20 @@ table caption {
 
 	.footer p.text-right {
 		text-align: left;
+	}
+
+	/* --------------------------------------
+   Reservation Form
+   -------------------------------------- */
+
+   .reservation {
+		width: 90%;
+		margin-left: 5%;
+		margin-bottom: 40px;
+	}
+
+	.reservation h2 {
+		font-size: 1.7em;
 	}
 
 }

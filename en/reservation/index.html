@@ -116,9 +116,9 @@
         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-        <form class="form-horizontal" action="/palautelomake" method="post">
+        <form class="form-horizontal" action="/palautelomake" method="post" role="form" data-toggle="validator">
           <fieldset>
-            <legend><i class="fa fa-phone fa-1x"></i> Contact details</legend>
+            <legend><i class="fa fa-phone-square fa-1x"></i> Contact details</legend>
             <input type="hidden" name="recipient" value="matajuut@gmail.com" />
             <input type="hidden" name="redirect" value="http://www.jokikumpu.com/en/reservation/confirmation/" />
             <input type="hidden" name="require" value="name" />
@@ -127,19 +127,25 @@
             <div class="form-group">
               <label for="name" class="col-sm-3 control-label">Name</label>
               <div class="col-sm-9">
-                <input type="text" class="form-control" id="name" placeholder="Name">
+                <input type="text" class="form-control" id="name" placeholder="Name" data-error="Please fill in your name." required>
+                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                <div class="help-block with-errors"></div>
               </div>
             </div>
             <div class="form-group">
               <label for="email" class="col-sm-3 control-label">Email</label>
               <div class="col-sm-9">
-                <input type="email" class="form-control" id="email" placeholder="Email">
+                <input type="email" class="form-control" id="email" placeholder="Email" data-error="Please provide a valid email address." required>
+                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                <div class="help-block with-errors"></div>
               </div>
             </div>
             <div class="form-group">
-              <label for="phone" class="col-sm-3 control-label">Telephone</label>
+              <label for="phone" class="col-sm-3 control-label">Phone</label>
               <div class="col-sm-9">
-                <input type="tel" class="form-control" id="telephone" placeholder="Telephone">
+                <input type="tel" class="form-control" id="phone" placeholder="Phone" data-error="Please fill in your phone number." required>
+                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                <div class="help-block with-errors"></div>
               </div>
             </div>
           </fieldset>
@@ -252,6 +258,7 @@
 </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/validator.js"></script>
     <script src="../../js/bootstrap-datepicker.js"></script>
     <script type="text/javascript">
       var nowTemp = new Date();

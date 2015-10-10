@@ -10,6 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
     <link href="../../../css/custom.css" rel="stylesheet">
+    <link href="../../../css/ekko-lightbox.min.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -72,8 +73,8 @@
             <li>
               <a href="../../">Home</a>
             </li>
-            <li class="active">
-              <a>Accommodation</a>
+            <li>
+              <a href="#">Accommodation</a>
             </li>
             <li>
               <a href="../../activities/">Activities</a>
@@ -107,11 +108,11 @@
 <div class="container">
         <div class="row">
               <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#description">Description</a></li>
-                <li><a data-toggle="tab" href="#photos">Photos</a></li>
-                <li><a data-toggle="tab" href="#rates">Rates</a></li>
-                <li><a data-toggle="tab" href="#availability">Availability</a></li>
-                <li><a data-toggle="tab" href="#floorplan">Floor plans</a></li>
+                <li class="active"><a data-toggle="tab" href="#description"><i class="fa fa-info-circle"></i> Description</a></li>
+                <li><a data-toggle="tab" href="#photos"><i class="fa fa-camera"></i> Photos</a></li>
+                <li><a data-toggle="tab" href="#rates"><i class="fa fa-eur"> </i> Rates</a></li>
+                <li><a data-toggle="tab" href="#availability"><i class="fa fa-calendar"></i> Availability</a></li>
+                <li><a data-toggle="tab" href="#floorplan"><i class="fa fa-picture-o"></i> Floor plans</a></li>
               </ul>
               <div class="tab-content">
                 <div id="description" class="tab-pane fade in active">
@@ -158,11 +159,9 @@
                     </div>
                 </div>
                 <div id="photos" class="tab-pane fade">
-                    <img src="../../../images/ruiskaunokki/ruiskaunokki_02.jpg" class="img-thumbnail gallery">
-                    <img src="../../../images/ruiskaunokki/ruiskaunokki_03.jpg" class="img-thumbnail gallery">
-                    <img src="../../../images/ruiskaunokki/ruiskaunokki_04.jpg" class="img-thumbnail gallery">
-                    <img src="../../../images/ruiskaunokki/ruiskaunokki_05.jpg" class="img-thumbnail gallery">
-                    <img src="../../../images/ruiskaunokki/ruiskaunokki_06.jpg" class="img-thumbnail gallery">
+                    <a href="../../../images/ruiskaunokki/ruiskaunokki_02.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Ruiskaunokki 1"><img src="../../../images/ruiskaunokki/ruiskaunokki_02.jpg" class="img-thumbnail gallery"></a>
+                    <a href="../../../images/ruiskaunokki/ruiskaunokki_03.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Ruiskaunokki 2"><img src="../../../images/ruiskaunokki/ruiskaunokki_03.jpg" class="img-thumbnail gallery"></a>
+                    <a href="../../../images/ruiskaunokki/ruiskaunokki_04.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Ruiskaunokki 3"><img src="../../../images/ruiskaunokki/ruiskaunokki_04.jpg" class="img-thumbnail gallery"></a>
                 </div>
                 <div id="rates" class="tab-pane fade">
                     <table class="table table-striped borderless">
@@ -252,5 +251,12 @@
 </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../../../js/bootstrap.min.js"></script>
+    <script src="../../../js/ekko-lightbox.min.js"></script>
+    <script>
+      $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      }); 
+    </script>
   </body>
 </html>

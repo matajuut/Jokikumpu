@@ -353,6 +353,10 @@ ol.breadcrumb {
 	margin-bottom: 20px;
 }
 
+.nav-tabs li a i.fa {
+	padding-right: 5px;
+}
+
 .accommodation-listing a img:hover {
 	opacity: 0.75;
     filter: alpha(opacity=75); /* For IE8 and earlier */
@@ -443,6 +447,10 @@ table caption {
 
 input.datepicker::-webkit-input-placeholder {
 	padding-left: 8px;
+}
+
+.form-control-feedback {
+	margin-right: 13px;
 }
 
 

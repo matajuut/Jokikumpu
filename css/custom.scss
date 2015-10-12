@@ -1,0 +1,735 @@
+/* ----------------------------------------------------
+   Created by Matti Juutinen for Jokikumpu Farm Tourism
+   ---------------------------------------------------- */
+
+$font1: 'Montserrat', sans-serif;
+$font2: 'Open Sans', sans-serif;
+$color1: #3576A7;
+$color2: #4EC9DF;
+$color3: #DAF5FA;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+body {
+	font-family: $font1;
+}
+
+
+/* --------------------------------------
+   Header
+   -------------------------------------- */
+
+header {
+	background-color: $color1;
+	min-height: 140px;
+	color: #FFFFFF;
+}
+
+.header-heading img {
+	margin-top: 15px;
+	height: 80px;
+}
+
+.header-widget-area {
+	margin-top: 29px;
+	width: auto;
+	float: right;
+}
+
+.header-widget {
+	float: left;
+	display: inline-block;
+}
+
+.header-widget a {
+	color: #FFFFFF;
+}
+
+.header-widget a:hover .header-widget-text, .header-widget a:hover .header-widget-icon {
+	opacity: 0.50;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.header-widget:first-child {
+	margin-right: 30px;
+}
+
+.header-widget:last-child {
+	margin-left: 30px;
+}
+
+.header-widget-icon {
+	float: left;
+	margin-top: 7px;
+	margin-right: 10px;
+}
+
+.header-widget-text {
+	float: left;
+}
+
+.header-widget-title {
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 4px;
+} 
+
+.header-widget-subtitle {
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+
+/* --------------------------------------
+   Navigation
+   -------------------------------------- */
+
+.navbar {
+	margin-bottom: 0;
+	position: absolute;
+	top: 115px;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: #FFFFFF;
+	border: #FFFFFF;
+	@include border-radius(25px);
+	z-index: 1;
+}
+
+.navbar .container {
+	width: 100%;
+}
+
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+
+.navbar .navbar-nav li a {
+	color: $color1;
+	transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+}
+
+.navbar .navbar-nav li a:hover {
+	color: #FFFFFF;
+	background-color: $color1;
+}
+
+.navbar .navbar-collapse {
+	text-align: center;
+}
+
+
+/* --------------------------------------
+   Jumbotron
+   -------------------------------------- */
+
+.jumbotron {
+	margin-top: 0px;
+	padding-top: 105px;
+	background: #4EC9DF url("../images/background/background_10.jpg") no-repeat;
+	background-position: left center;
+	color: #FFFFFF;
+	height: 400px;
+}
+
+.jumbotron .container {
+	position: absolute;
+	left: 7%;
+	padding: 30px;
+	background-color: #ffffff;
+	opacity: 0.85;
+	filter: alpha(opacity=85); /* For IE8 and earlier */
+	width: 50%;
+	@include border-radius(20px);
+}
+
+.jumbotron .container h1 {
+	font-size: 2em;
+	color: #3576a7;
+}
+
+.jumbotron .container p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	color: #3576a7;
+	font-weight: 400;
+	line-height: 1.7em;
+}
+
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+#myCarousel {
+	margin-bottom: 30px;
+}
+
+.carousel-caption {
+	position: relative;
+	left: 7%;
+	top: 90px;
+	width: 50%;
+	padding: 30px;
+	background-color: #FFFFFF;
+	opacity: 0.85;
+	filter: alpha(opacity=85); /* For IE8 and earlier */
+	@include border-radius(20px);
+	text-align: left;
+	text-shadow: none;
+}
+
+.carousel-caption h4 {
+	font-size: 2em;
+	color: $color1;
+}
+
+.carousel-caption p {
+	font-family: $font2;
+	font-size: 1.2em;
+	color: $color1;
+	font-weight: 400;
+	line-height: 1.7em;
+}
+
+.carousel-caption-old p {
+	font-size: 24px;
+}
+
+.carousel-caption-old h4 {
+	font-size: 32px;
+}
+
+#myCarousel .item {
+	height: 400px;
+}
+
+#slide1 {
+	background: url('../images/background/background_10.jpg') left center no-repeat;
+}
+
+#slide2 {
+	background: url('../images/background/background_12.jpg') left center no-repeat;
+}
+
+#slide3 {
+	background: url('../images/background/background_13.jpg') left center no-repeat;
+}
+
+.carousel-control {
+	width: 100px;
+}
+
+ol.carousel-indicators li {
+	width: 15px;
+	height: 15px;
+	@include border-radius(15px);
+	border: none;
+	background-color: #FFFFFF;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+ol.carousel-indicators li.active {
+	width: 15px;
+	height: 15px;
+	@include border-radius(15px);
+	border: none;
+	background-color: $color1;
+	margin-bottom: 1px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+/* --------------------------------------
+   Breadcrumb and page heading
+   -------------------------------------- */
+
+.breadcrumb-fluid {
+	margin-bottom: 40px;
+	background: $color2 url("../images/breadcrumb_background.png") repeat-x;
+	background-position: left bottom;
+}
+
+.breadcrumb {
+	margin: 26px 0px 0px 0px;
+	background-color: transparent;
+	color: #FFFFFF;
+	@include border-radius(0px);
+}
+
+.breadcrumb > li + li:before {
+	color: #FFFFFF;
+}
+
+.breadcrumb li.active {
+	color: #FFFFFF;
+}
+
+.breadcrumb li a {
+	color: #FFFFFF;
+}
+
+ol.breadcrumb {
+	padding-left: 0px;
+}
+
+.breadcrumb-fluid h1 {
+	color: #FFFFFF;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+
+
+/* --------------------------------------
+   Body
+   -------------------------------------- */
+
+.main-body h2 {
+	font-size: 2.2em;
+	color: $color1;
+}
+
+.main-body p {
+	font-family: $font2;
+	font-size: 1em;
+	line-height: 2.1em;
+}
+
+.main-body a.btn {
+	font-family: $font1;
+	background-color: $color1;
+	border: 0px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	transition: all 0.2s ease;
+}
+
+.main-body a.btn:hover {
+	background-color: $color2;
+}
+
+.main-body a.btn i.fa {
+	margin-left: 7px;
+}
+
+.main-body .img-rounded {
+	@include border-radius(10px);
+}
+
+
+/* --------------------------------------
+   Accommodation listing
+   -------------------------------------- */
+
+.accommodation-listing h2 {
+	font-weight: normal;
+	font-size: 1.7em;
+	color: $color1;
+}
+
+.accommodation-listing p {
+	font-family: $font2;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.accommodation-listing a.btn {
+	font-family: $font1;
+	background-color: $color1;
+	border: 0px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	transition: all 0.2s ease;
+}
+
+.accommodation-listing a.btn:hover {
+	background-color: $color2;
+}
+
+.accommodation-listing a.btn i.fa {
+	margin-left: 7px;
+}
+
+.accommodation-listing .img-rounded {
+	@include border-radius(10px);
+}
+
+.nav-tabs {
+	margin-bottom: 20px;
+}
+
+.nav-tabs li a i.fa {
+	padding-right: 5px;
+}
+
+.accommodation-listing a img:hover {
+	opacity: 0.75;
+	filter: alpha(opacity=75); /* For IE8 and earlier */
+}
+
+table {
+	font-family: $font2;
+}
+
+table caption {
+	font-size: 1.5em;
+}
+
+.table-striped th {
+	width: 30%;
+}
+
+.borderless tbody tr td, .borderless tbody tr th, .borderless thead tr th {
+	border: none;
+}
+
+.table-striped>tbody>tr:nth-child(odd) {
+	background-color: $color3;
+}
+
+img.gallery {
+	float: left;
+	height: 130px;
+	margin: 7px;
+}
+
+img.floorplan {
+	float: left;
+	margin: 7px;
+}
+
+img.gallery:hover, img.floorplan:hover {
+	opacity: 0.60;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+.calendar {
+	width: 100%;
+	height: 500px;
+}
+
+
+/* --------------------------------------
+   Reservation Form
+   -------------------------------------- */
+
+.reservation {
+	background-color: $color1;
+	color: #FFFFFF;
+	font-family: $font2;
+	font-size: 1em;
+	line-height: 1.5em;
+	@include border-radius(20px);
+	padding: 0px 20px 10px 20px;
+}
+
+.reservation h2 {
+	font-size: 2em;
+	padding-bottom: 20px;
+}
+
+.reservation ul {
+	padding-left: 20px;
+}
+
+.reservation ul li {
+	padding-bottom: 25px;
+}
+
+.form-horizontal {
+	font-family: $font2;
+}
+
+.form-horizontal fieldset {
+	margin-bottom: 20px;
+}
+
+.form-horizontal legend {
+	color: $color1;
+	font-family: $font1;
+}
+
+.form-horizontal legend i.fa {
+	font-size: 1.5em;
+	padding-right: 10px;
+}
+
+.form-horizontal button i {
+	margin-left: 5px;
+}
+
+input.datepicker::-webkit-input-placeholder {
+	padding-left: 8px;
+}
+
+.form-control-feedback {
+	margin-right: 13px;
+}
+
+
+/* --------------------------------------
+   Footer
+   -------------------------------------- */
+
+.footer {
+	margin-top: 40px;
+	padding-top: 20px;
+	padding-bottom: 12px;
+	background-color: $color2;
+	color: #FFFFFF;
+}
+
+.footer a {
+	color: #FFFFFF;
+}
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.jumbotron .container, .carousel-caption {
+		width: 60%;
+	}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.header-widget-area {
+		margin-top: 31px;
+	}
+
+	.header-widget:first-child {
+		margin-right: 15px;
+	}
+
+	.header-widget:last-child {
+		margin-left: 15px;
+	}
+
+	.header-widget-icon i {
+		font-size: 2.4em;
+		margin-top: 3px;
+		margin-right: 0px;
+	}
+
+	.header-widget-title {
+		font-size: 0.9em;
+		margin-bottom: 3px;
+	} 
+
+	.header-widget-subtitle {
+		font-size: 0.8em;
+	}
+
+	.header-heading img {
+		height: 63px;
+		margin-top: 25px;
+	}
+
+	.jumbotron .container, .carousel-caption {
+		width: 70%;
+	}
+
+	.carousel-control {
+		width: 70px;
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+	header {
+		min-height: 200px;
+	}
+
+	.header-heading {
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.header-widget-area {
+		float: none;
+		text-align: center;
+	}
+
+	.header-widget {
+		float: none;
+		text-align: left;
+	}
+
+	.header-widget:first-child {
+		margin-right: 20px;
+	}
+
+	.header-widget:last-child {
+		margin-left: 20px;
+	}
+
+	.header-widget-icon i {
+		font-size: 2.2em;
+		margin-top: 5px;
+		margin-right: 1px;
+	}
+
+	.header-widget-title {
+		font-size: 0.9em;
+		margin-bottom: 3px;
+	} 
+
+	.header-widget-subtitle {
+		font-size: 0.7em;
+	}
+
+	.navbar {
+		top: 175px;
+	}
+
+	.jumbotron {
+		padding-top: 70px;
+	}
+
+	#myCarousel .item {
+		height: 440px;
+	}
+
+	.carousel-control {
+		width: 50px;
+	}
+
+	.jumbotron .container, .carousel-caption {
+		width: 86%;
+	}
+
+	.hide-on-mobile {
+		display: none;
+	}
+
+	.footer p.text-right {
+		text-align: left;
+	}
+
+	.reservation {
+		width: 90%;
+		margin-left: 5%;
+		margin-bottom: 40px;
+	}
+
+	.reservation h2 {
+		font-size: 1.7em;
+	}
+
+	img.margin-bottom {
+		margin-bottom: 20px;
+	}
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+	header {
+		min-height: 280px;
+	}
+
+	.header-heading img {
+		height: 65px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.header-widget-area {
+		margin: auto;
+		padding: 0;
+		float: none;
+		width: 170px;
+	}
+
+	.header-widget {
+		float: left;
+		display: block;
+		clear: both;
+		width: auto;
+	}
+
+	.header-widget-icon i {
+		font-size: 2em;
+		margin-top: 5px;
+		margin-right: 1px;
+	}
+
+	.header-widget-title {
+		font-size: 1em;
+		margin-bottom: 3px;
+	} 
+
+	.header-widget-subtitle {
+		font-size: 0.9em;
+	}
+
+	.header-widget:first-child {
+		margin-right: 0;
+	}
+
+	.header-widget:last-child {
+		margin-left: 0;
+	}
+
+	.navbar {
+		top: 255px;
+	}
+
+	.jumbotron {
+		padding-top: 70px;
+		height: 525px;
+	}
+
+	#myCarousel .item {
+		height: 525px;
+	}
+
+	.carousel-control {
+		display: none;
+	}
+
+	.breadcrumb-fluid h1 {
+		font-size: 2.2em;
+	}
+
+	img.gallery {
+		height: 100px;
+		margin: 5px;
+	}
+
+	.hide-on-mobile {
+		display: none;
+	}
+
+	.footer p.text-right {
+		text-align: left;
+	}
+
+}

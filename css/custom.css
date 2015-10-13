@@ -134,7 +134,7 @@ table caption { font-size: 1.5em; }
 
 img.gallery { float: left; height: 130px; margin: 7px; }
 
-img.floorplan { float: left; margin: 7px; }
+img.floorplan { float: left; max-height: 300px; max-width: 300px; margin: 7px; }
 
 img.gallery:hover, img.floorplan:hover { opacity: 0.60; filter: alpha(opacity=60); /* For IE8 and earlier */ }
 
@@ -162,6 +162,21 @@ img.gallery:hover, img.floorplan:hover { opacity: 0.60; filter: alpha(opacity=60
 input.datepicker::-webkit-input-placeholder { padding-left: 8px; }
 
 .form-control-feedback { margin-right: 13px; }
+
+/* -------------------------------------- Contact -------------------------------------- */
+.contact .tab-content { font-family: "Open Sans", sans-serif; }
+
+.contact #contact-details .contact-table { background-color: #3576A7; padding: 10px 20px 1px 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; border-radius: 20px; color: #FFFFFF; }
+
+.contact #contact-details .contact-table table tr td { border: none; }
+
+.contact #contact-details .contact-table .left-column { width: 50px; text-align: center; vertical-align: middle; font-size: 2em; }
+
+.contact #contact-details .contact-table .right-column { vertical-align: middle; }
+
+.contact #contact-details .contact-table a { color: #FFFFFF; }
+
+.contact iframe.google-map { width: 100%; height: 400px; }
 
 /* -------------------------------------- Footer -------------------------------------- */
 .footer { margin-top: 40px; padding-top: 20px; padding-bottom: 12px; background-color: #4EC9DF; color: #FFFFFF; }
@@ -201,7 +216,8 @@ input.datepicker::-webkit-input-placeholder { padding-left: 8px; }
   .footer p.text-right { text-align: left; }
   .reservation { width: 90%; margin-left: 5%; margin-bottom: 40px; }
   .reservation h2 { font-size: 1.7em; }
-  img.margin-bottom { margin-bottom: 20px; } }
+  img.margin-bottom { margin-bottom: 20px; }
+  .contact #contact-details .contact-table { margin-bottom: 20px; } }
 /* Portrait phones and smaller */
 @media (max-width: 480px) { header { min-height: 280px; }
   .header-heading img { height: 65px; margin-top: 5px; margin-bottom: 5px; }

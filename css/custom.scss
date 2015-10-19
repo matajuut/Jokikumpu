@@ -216,15 +216,15 @@ header {
 }
 
 #slide1 {
-	background: url('../images/background/background_9.jpg') left center no-repeat;
+	background: $color2 url('../images/background/background_9.jpg') no-repeat left center;
 }
 
 #slide2 {
-	background: url('../images/background/background_12.jpg') left center no-repeat;
+	background: $color2 url('../images/background/background_12.jpg') no-repeat left center;
 }
 
 #slide3 {
-	background: url('../images/background/background_7.jpg') left center no-repeat;
+	background: $color2 url('../images/background/background_7.jpg') no-repeat left center;
 }
 
 .carousel-control {
